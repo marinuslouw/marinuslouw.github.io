@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gerard Louis Walsh</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+* { box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*
+ Primary Rules
+*/
+h1 {
+    font-weight: 300;
+    margin: 5px 0 0;
+    font-size: 40px;
+    padding: 0 10px 10px;
+    border-radius:2px;
+    font-family: 'Slabo 27px', serif;
+}
+/*
+h2 {
+    width: 150px;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: 'Slabo 27px', serif;
+}*/
+h2, h3 { font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 0;
+     line-height: 28px;
+     font-family: 'Slabo 27px', serif;
+}
+/* h2, h3 { margin-top: 5px } */
+a { color: #ba0018;
+    display: inline-block;
+    text-decoration: none;
+    padding:2px 4px;
+    border-radius:2px;
+    margin-right:-2px;
+}
+a:hover {
+  background-color:#ba0018;
+  color:#fff;
+}
+.key:first-child { margin-left: 0 }
+.key { margin: 0 10px;
+       position: relative;
+}
+.key::before { content: '◆';
+               position: absolute;
+               left: -15px;
+               color: #555;
+               font-size: 7pt;
+}
+.key:first-child::before { content: '' }
+.section { border-bottom: 1px solid #ddd;
+           padding: 10px 0 15px;
+}
+.section:last-child { border: none }
+.section-text {
+    width: 80%;
+    /*
+    font-size: 18px;
+    line-height: 24px;
+    */
+    margin: 0 0 10px;
+    padding: 0 10px;
+}
+.subsection { margin: 10px 0 5px }
+.desc { font-size: 16px; color:#444;}
+.contact-info { font-size: 16px;
+                text-align: right;
+}
+.emph { font-style: italic }
+.light { color: #aaa;letter-spacing:1px;
+         font-size: 14px;
+         line-height:28px;
+         text-transform:uppercase;
+}
+ul{
+  padding-left:15px;
+}
+ul.skills{
+  float:left;
+  width:30%;
+  padding-left:0px;
+  margin: 0 20px 0 0;
+}
+ul.skills li{
+  list-style: none;
+  font-size:16px;
+  margin-bottom:10px;
+}
+ul.skills li:last-child{
+  margin:0;
+}
+/*
+ Float Rules
+*/
+.row:before, .row:after { content: "";
+                          display: table;
+}
+.row:after { clear: both }
+.col { float: left }
+.col-right { float: right }
+/*
+ Page Rules
+*/
+.page { width: 1000px;
+        min-height: 29.7cm;
+        margin: 1cm auto;
+        background: white;
+        padding: 20px 50px;
+}
+.subpage { padding: 1cm;
+           border: 1px red solid;
+           height: 297mm;
+}
+@page { size: A4;
+        margin: 0;
+}
+@media print {
+    .page { margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+    }
+    .page-break{
+      page-break-before: always;
+      padding-top:30px;
+    }
+    body { font-size: 12pt;}
+    h1{
+      font-size: 23pt;
+    }
+    h2{
+      font-size:10pt;
+      width: 3cm;
+      padding-left: 10px;
+    }
+    h3 { font-size: 10pt; line-height:11pt}
+    .section-text { font-size: 9pt; line-height: 14pt; }
+    .light { font-size: 7.5pt; line-height:12pt; color:#ddd; }
+    
+    .page { width: 21cm }
+    ul {margin:5px 0 0}
+    .section { padding: 5px 0 8px }
+    .section-text { width: 15cm; margin: 5px 0 5px;}
+    .subsection { margin: 5px 0 0 }
+    .desc { font-size: 9pt }
+    
+    .contact-info { font-size: 9pt}
+    
+    ul.skills{margin: 0 10px 0 0;}
+    ul.skills li{ font-size: 9pt; margin-bottom:0}
+}
+        </style>
+    <body>
+        <div class="page">
+            <div class="section row">
+                <h1 class="col">Gerard Louis Walsh</h1>
+                <div class="contact-info col-right">
+                    <div>082  497 8496 <i class="fa fa-phone-square"></i></div>
+                    <div><a href="mailto:gerard@exegetic.biz">gerard@exegetic.biz</a> <i class="fa fa-envelope-square"></i></div>
+                    <div><a href="https://za.linkedin.com/in/gerard-walsh-393075161">https://za.linkedin.com/in/gerard-walsh-393075161</a> <i class="fa fa-linkedin-square"></i></div>
+                </div>
+            </div>
+            <!--
+            <div class="section row">
+                <h2 class="col">Interests</h2>
+                <div class="section-text col-right"><span class="key">Intelligent systems</span> <span class="key">Machine learning</span> <span class="key">Data visualization</span> <span class="key">Computer vision &amp; graphics</span> <span class="key">Information networks</span> <span class="key">User experience / interaction design</span> </div>
+            </div>
+            -->
+            <div class="section row">
+                <h2 class="col">Software skills</h2>
+                <div class="section-text col-right row">
+                    <ul class="Software skills" style="width:30%">
+                        <li>R</li>
+                        <li>Python</li>
+                        <li>C & C++</li>
+                        <li>MATLAB</li>
+                    </ul>
+                    <ul class="Software skills" style="width:30%">
+                        <li>MySQL</li>
+                        <li>Linux</li>
+                        <li>Bash</li>
+                        <li>Git</li>
+                        
+                    </ul>
+                    <ul class="Software skills">
+                        <li>Docker</li>
+                        <li>Deep Learning Software environments (PyTorch, TensorFlow, NVIDIA toolkit)</li>
+                        <li>OpenCV</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+                        <div class="section row">
+                <h2 class="col">Work experience</h2>                
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Exegetic Analytics</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Junior Data Scientist</div>
+                        <div class="col-right light">2019/03-2019/06</div>
+                    </div>
+                    <div>
+                    Consult for various companies on Data Science tasks: Analytics, model creation and visualization in R & Python, database management in MySQL, Shiny app development, deployment & containerization with Docker.
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Fraunhofer IWU, Chemnitz, Germany</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Computer Vision Research Intern</div>
+                        <div class="col-right light">2018/09-2019/01</div>
+                    </div>
+                    <div>
+                        Literature review and critical analysis of state-of-the-art Computer Vision algorithms for Object Tracking, Detection, Pose Estimation and Stereo Vision. 
+                        Assessment for industry usage based on robustness and speed. 
+                        Working with various Computer Vision algorithms using TensorFlow, Caffe, Caffe2 utilizing programming languages Python, C++ and MATLAB.
+                        Creation and maintenance of software infrastructure including Docker images, NVIDIA GPU drivers/toolkits, virtual environments. 
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Stellenbosch University, Stellenbosch</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">University tutor (part time)</div>
+                        <div class="col-right light">2017/07-2017/11</div>
+                    </div>
+                    <div>
+                        1st year Engineering Computer Programming in C. 
+                    </div>
+                    <div>
+                        3rd year Mechanical and Mechatronic Engineering Control Systems. 
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">University tutor (part time)</div>
+                        <div class="col-right light">2014/01 - 2015/01</div>
+                    </div>
+                    <div>
+                        1st year Engineering Mathematics. 
+                    </div>
+                    <div>
+                        1st year Strength of Materials. 
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Stellies Tutoring, Stellenbosch</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Private tutor (part time)</div>
+                        <div class="col-right light">2017/07-2017/11</div>
+                    </div>
+                    <div>
+                        1st year Engineering Computer Programming in C. 
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Thermodynamics Fluids & Design (TFD), Stellenbosch</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Systems Engineer (Vacation work)</div>
+                        <div class="col-right light">2016/11-2017/02</div>
+                    </div>
+                    <div>
+                        Mechanical design w/ AutoCAD, P&ID design of a manufacturing plant. Liase with client (Rheinmetall Denel Munition) directly regarding chemical plant layout and design. 
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Westside Distillers, Cape Town</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Junior Engineer (Vacation work)</div>
+                        <div class="col-right light">2014/12 - 2015/01</div>
+                    </div>
+                    <div>
+                        Machine Design w/ Solidworks. Creation of drawing packs for bottling plant. 
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Complete Cyclist, Hout Bay</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Workshop and sales manager</div>
+                        <div class="col-right light">2012/01 - 2013/01</div>
+                    </div>
+                    <div>
+                        Liazing with clients and distributors. Stock monitoring, quality control, bicycle servicing.  
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Education</h2>
+                <div class="section-text col-right">
+                    <h3>Masters in Mechatronic Engineering (Cum Laude)</h3>
+                    <div>Stellenbosch University</div>
+                    <div class="row">
+                        <div class="col light">Stellenbosch, South Africa</div>
+                        <div class="col-right light">2019</div>
+                    </div>
+                    <div>
+                        Thesis: Feasibility analysis of general-purpose single board computer for real-time execution of a visual object tracking algorithm, implemented in C++ utilizing OpenCV’s framework, for deployment on UAVs. 
+                    </div>
+                </div>
+                <div class="section-text col-right">    
+                    <h3>Bachelors in Mechanical Engineering</h3>
+                    <div>Stellenbosch University</div>
+                    <div class="row">
+                        <div class="col light">Stellenbosch, South Africa</div>
+                        <div class="col-right light">2017</div>
+                    </div>
+                    <div>
+                        Thesis: Design, manufacture and calibration of a Bi-Axial strain device for testing mechanical properties of heart-valve tissue prosthesis.
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <h3>Matric</h3>
+                    <div>South Africa College Schools (SACS)</div>
+                    <div class="row">
+                        <div class="col light">Cape Town, South Africa</div>
+                        <div class="col-right light">2010</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">About</h2>
+                <div class="section-text col-right">
+                    <h3>Spoken languages</h3>
+                    <div>
+                        English, Afrikaans, German (A1).
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <h3>Hobbies</h3>
+                    <div>
+                        Swimming, Water polo, Yoga, Mountain-biking, self-development, automotive diy, motorsport.
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="section row">
+                <h2 class="col">Projects</h2>
+                <div class="section-text col-right">
+                </div>
+            </div>
+            -->
+        </div>
+    </body>
+</html>
